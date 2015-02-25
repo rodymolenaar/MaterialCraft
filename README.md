@@ -18,8 +18,10 @@ Have a bug or an issue with this template? Open an issue or send us a message on
 
 MaterialCraft was created by and is maintained by **Rody Molenaar** from [Xtrada Nederland] (https://xtrada.nl/en/).
 
-* https://twitter.com/XtradaNL
-* https://github.com/rodymolenaar
+* https://twitter.com/rodymolenaar
+* https://github.com/rodymol123
+
+Follow [@XtradaNL] (https://twitter.com/XtradaNL) for more cool themes and templates!
 
 
 ## Copyright and License
