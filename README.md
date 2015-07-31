@@ -14,11 +14,9 @@ To use this theme, choose one of the following options to get started:
 * Click download on the right.
 * Download on http://xtradadesign.com/
 
-## Screenshots
-![Example](https://xtrada.nl/dist/img/materialcraft.png)
 ## Bugs and Issues
 
-Have a bug or an issue with this template? Open an issue!
+Our quality standards are you high, so if you find anything(!), please open an issue.
 
 ## Creator
 
