@@ -1,7 +1,7 @@
 /* Navbar */
 .navbar-default {
-  background-color: #009688;
-  border-color: #009688;
+  background-color: @navbar-bg;
+  border-color: @navbar-bg;
   text-transform: uppercase;
 	-webkit-box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.24);
 	-moz-box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.24);
@@ -16,22 +16,22 @@
   text-transform: none;
   font-size: 16px;
   -webkit-transition: background-color 500ms linear;
-    -moz-transition: background-color 500ms linear;
-    -o-transition: background-color 500ms linear;
-    -ms-transition: background-color 500ms linear;
-    transition: background-color 500ms linear;
+  -moz-transition: background-color 500ms linear;
+  -o-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #fff;
   text-decoration: none;
-  background-color: #00897B;
+  background-color: darken(@navbar-bg, 4%);
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #fff;
-  background: #00695C !important;
+  background: darken(@navbar-bg, 10%) !important;
 }
 .navbar-default .navbar-toggle {
   border-color: transparent;

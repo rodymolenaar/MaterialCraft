@@ -750,13 +750,13 @@ input[type="checkbox"]:disabled:checked:after,
 .navbar-default .navbar-nav > li > a:focus {
   color: #fff;
   text-decoration: none;
-  background-color: #00897B;
+  background-color: #008276;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #fff;
-  background: #00695C !important;
+  background: #00635a !important;
 }
 .navbar-default .navbar-toggle {
   border-color: transparent;
