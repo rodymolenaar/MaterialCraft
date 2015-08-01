@@ -2,7 +2,7 @@ module.exports = function(grunt) {
          grunt.initConfig({
              watch: {
                 files: ['less/**/*.less'],
-                tasks: ["less:standard", "less:dark", "less:blue"]
+                tasks: ["less:standard", "less:dark", "less:blue", "less:red"]
              },
              less: {
                  standard: {
@@ -11,10 +11,10 @@ module.exports = function(grunt) {
                          strictMath: true,
                          sourceMap: true,
                          outputSourceFiles: true,
-                         sourceMapURL: 'materialcraft.css.map',
-                         sourceMapFilename: 'materialcraft.css.map'
+                         sourceMapURL: 'dist/materialcraft.css.map',
+                         sourceMapFilename: 'dist/materialcraft.css.map'
                      },
-                     files: {"materialcraft.css": "less/materialcraft.less"}
+                     files: {"dist/materialcraft.css": "less/materialcraft.less"}
                  },
                  dark: {
                      options: {
@@ -22,10 +22,10 @@ module.exports = function(grunt) {
                          strictMath: true,
                          sourceMap: true,
                          outputSourceFiles: true,
-                         sourceMapURL: 'dark/materialcraft_dark.css.map',
-                         sourceMapFilename: 'dark/materialcraft_dark.css.map'
+                         sourceMapURL: 'dist/dark/materialcraft_dark.css.map',
+                         sourceMapFilename: 'dist/dark/materialcraft_dark.css.map'
                      },
-                     files: {"dark/materialcraft_dark.css": "less/materialcraft_dark.less"}
+                     files: {"dist/dark/materialcraft_dark.css": "less/materialcraft_dark.less"}
                  },
                  blue: {
                      options: {
@@ -33,10 +33,21 @@ module.exports = function(grunt) {
                          strictMath: true,
                          sourceMap: true,
                          outputSourceFiles: true,
-                         sourceMapURL: 'blue/materialcraft_blue.css.map',
-                         sourceMapFilename: 'blue/materialcraft_blue.css.map'
+                         sourceMapURL: 'dist/blue/materialcraft_blue.css.map',
+                         sourceMapFilename: 'dist/blue/materialcraft_blue.css.map'
                      },
-                     files: {"blue/materialcraft_blue.css": "less/materialcraft_blue.less"}
+                     files: {"dist/blue/materialcraft_blue.css": "less/materialcraft_blue.less"}
+                 },
+                 red: {
+                     options: {
+                         paths: ["less"],
+                         strictMath: true,
+                         sourceMap: true,
+                         outputSourceFiles: true,
+                         sourceMapURL: 'dist/red/materialcraft_red.css.map',
+                         sourceMapFilename: 'dist/red/materialcraft_red.css.map'
+                     },
+                     files: {"dist/red/materialcraft_red.css": "less/materialcraft_red.less"}
                  }
              }
          });
