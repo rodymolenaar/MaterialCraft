@@ -2,10 +2,10 @@ module.exports = function(grunt) {
          grunt.initConfig({
              watch: {
                 files: ['less/**/*.less'],
-                tasks: ["less"]
+                tasks: ["less:standard", "less:dark"]
              },
              less: {
-                 development: {
+                 standard: {
                      options: {
                          paths: ["less"],
                          strictMath: true,
@@ -15,6 +15,17 @@ module.exports = function(grunt) {
                          sourceMapFilename: 'materialcraft.css.map'
                      },
                      files: {"materialcraft.css": "less/materialcraft.less"}
+                 },
+                 dark: {
+                     options: {
+                         paths: ["less"],
+                         strictMath: true,
+                         sourceMap: true,
+                         outputSourceFiles: true,
+                         sourceMapURL: 'dark/materialcraft_dark.css.map',
+                         sourceMapFilename: 'dark/materialcraft_dark.css.map'
+                     },
+                     files: {"dark/materialcraft_dark.css": "less/materialcraft_dark.less"}
                  }
              }
          });
