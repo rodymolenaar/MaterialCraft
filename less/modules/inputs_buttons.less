@@ -48,18 +48,18 @@ font-size: 18px;
     padding: 6px 0px;
     font-size: 14px;
     line-height: 1.42857143;
-    color: #555;
+    color: @form-control-color;
     background-color: transparent;
 	border-top: 0px;
     background-image: none;
     border: 0px solid transparent;
-	border-bottom: 2px solid #ccc;
+	border-bottom: 2px solid @form-control;
     border-radius: 0px;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
 .form-control:focus {
-    border-color: @navbar-bg;
+    border-color: @form-control-focus;
     outline: 0;
     -webkit-box-shadow: none;
 	-moz-box-shadow: none;
@@ -210,8 +210,8 @@ input[type="checkbox"]:checked:before,
 input[type="checkbox"]:checked:after,
 .checkbox input[type="checkbox"]:checked:after,
 .checkbox-inline input[type="checkbox"]:checked:after {
-  background-color: #009688;
-  border-color: #009688;
+  background-color: @form-control-focus;
+  border-color: @form-control-focus;
 }
 input[type="checkbox"]:disabled:after,
 .checkbox input[type="checkbox"]:disabled:after,
@@ -228,22 +228,22 @@ input[type="checkbox"]:disabled:checked:after,
 .has-warning .form-control,
 .has-warning input:not([type=checkbox]):focus,
 .has-warning .form-control:focus {
-  -webkit-box-shadow: inset 0 -2px 0 #ff9800;
-  box-shadow: inset 0 -2px 0 #ff9800;
+  -webkit-box-shadow: inset 0 -2px 0 @brand-warning;
+  box-shadow: inset 0 -2px 0 @brand-warning;
 }
 .has-error input:not([type=checkbox]),
 .has-error .form-control,
 .has-error input:not([type=checkbox]):focus,
 .has-error .form-control:focus {
-  -webkit-box-shadow: inset 0 -2px 0 #e51c23;
-  box-shadow: inset 0 -2px 0 #e51c23;
+  -webkit-box-shadow: inset 0 -2px 0 @brand-danger;
+  box-shadow: inset 0 -2px 0 @brand-danger;
 }
 .has-success input:not([type=checkbox]),
 .has-success .form-control,
 .has-success input:not([type=checkbox]):focus,
 .has-success .form-control:focus {
-  -webkit-box-shadow: inset 0 -2px 0 #4caf50;
-  box-shadow: inset 0 -2px 0 #4caf50;
+  -webkit-box-shadow: inset 0 -2px 0 @brand-success;
+  box-shadow: inset 0 -2px 0 @brand-success;
 }
 .radio label,
 .radio-inline label,
