@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="html">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Example Server Store ~ MinecraftMarket</title>
+<link rel="icon" href="https://assets.minecraftmarket.com/static/img/favicon.png" type="image/png">
+<link href="https://assets.minecraftmarket.com/static/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://assets.minecraftmarket.com/static/css/bootstrap-select.min.css" rel="stylesheet">
+<link href="https://assets.minecraftmarket.com/static/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://assets.minecraftmarket.com/static/css/market.css" rel="stylesheet">
+<link href="materialcraft_red.css" rel="stylesheet">
+<script type="text/javascript" src="https://assets.minecraftmarket.com/static/js/jquery-2.0.3.min.js"></script>
+</head>
+<body style="background-image: url('https://assets.minecraftmarket.com/static/img/website-background.png')">
+<div class="container">
+<div class="jumbotron frontpage-splash" style="background-image: url('https://assets.minecraftmarket.com/static/img/header.jpg');">
+<div class="header">
+<div class="logo">
+MaterialCraft
+</div>
+<div class="store-controls">
+<div class="btn-group">
+<form id="currency_switcher" method="POST" action="/setcurrency/">
+<select id="currency" name="currency" class="form-control" onchange="$('#currency_switcher').submit()" data-dropup-auto="false" data-width="80px" data-size="8" data-live-search="true" data-title="USD" multiple>
+<option value="AUD">
+AUD
+</option>
+<option value="BRL">
+BRL
+</option>
+<option value="GBP">
+GBP
+</option>
+<option value="CAD">
+CAD
+</option>
+<option value="CZK">
+CZK
+</option>
+<option value="DKK">
+DKK
+</option>
+<option value="EUR">
+EUR
+</option>
+<option value="HKD">
+HKD
+</option>
+<option value="HUF">
+HUF
+</option>
+<option value="ILS">
+ILS
+</option>
+<option value="JPY">
+JPY
+</option>
+<option value="MYR">
+MYR
+</option>
+<option value="MXN">
+MXN
+</option>
+<option value="TWD">
+TWD
+</option>
+<option value="NZD">
+NZD
+</option>
+<option value="NOK">
+NOK
+</option>
+<option value="PHP">
+PHP
+</option>
+<option value="PLN">
+PLN
+</option>
+<option value="RUB">
+RUB
+</option>
+<option value="SGD">
+SGD
+</option>
+<option value="SEK">
+SEK
+</option>
+<option value="CHF">
+CHF
+</option>
+<option value="THB">
+THB
+</option>
+<option value="TRY">
+TRY
+</option>
+<option value="USD">
+USD
+</option>
+</select>
+<noscript>
+<input type="submit" value="Set"/>
+</noscript>
+</form>
+</div>
+<button type="button" class="btn btn-primary" disabled="disabled">Checkout <span class="caret"></span></button>
+</div>
+</div>
+</div>
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li><a href="/">Home</a></li>
+<li class="divider-vertical"></li>
+<li><a href="/category/5824">Ranks</a></li>
+<li class="divider-vertical"></li>
+<li><a href="/category/5825">Items</a></li>
+<li class="divider-vertical"></li>
+<li><a href="/category/5827">Money</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-8">
+<div class="panel panel-default store-desc">
+<div class="panel-body">
+<p><p>Welcome to the example web store, feel free to explore and test all of the wonderful features we have to offer.</p>
+<p>&nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img alt="" src="https://www.paypalobjects.com/webstatic/mktg/logo/AM_SbyPP_mc_vs_dc_ae.jpg" style="width: 319px; height: 110px;"/></p>
+</p>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="panel panel-default">
+<div class="panel-heading">Top donator</div>
+<div class="panel-body">
+<div class="module-topdonor">
+<div class="module-topdonor-image">
+<img src="https://www.minecraftmarket.com/api/profiles/full2d/xXxKillDogxXx/100/" width="50" height="100" title="xXxKillDogxXx" alt="xXxKillDogxXx">
+</div>
+<div class="module-topdonor-text">
+<h3>xXxKillDogxXx</h3>
+<small>has spent 560,057.95 USD</small>
+</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">Test</div>
+<div class="panel-body store-status">
+<span class="circle-online"></span>
+<span class="text-muted">playvc.me</span> <span class="text-muted pull-right">101 of 1000 online</span>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">Recent donators</div>
+<div class="panel-body store-donators">
+<div class="donator">
+<div class="donator-img">
+<img src="https://www.minecraftmarket.com/api/profiles/heads/4lmutairi/32" title="4lmutairi" alt="4lmutairi" width="32" height="32">
+</div>
+<p><span class="donator-username">4lmutairi</span> bought dfsdfsdf
+<br>Price: 0.00 USD</p>
+</div>
+<div class="donator">
+<div class="donator-img">
+<img src="https://www.minecraftmarket.com/api/profiles/heads/Applehappy/32" title="Applehappy" alt="Applehappy" width="32" height="32">
+</div>
+<p><span class="donator-username">Applehappy</span> bought dfsdfsdf
+<br>Price: 0.00 USD</p>
+</div>
+<div class="donator">
+<div class="donator-img">
+<img src="https://www.minecraftmarket.com/api/profiles/heads/DarkPhantomJH/32" title="DarkPhantomJH" alt="DarkPhantomJH" width="32" height="32">
+</div>
+<p><span class="donator-username">DarkPhantomJH</span> bought dfsdfsdf
+<br>Price: 0.00 USD</p>
+</div>
+<div class="donator">
+<div class="donator-img">
+<img src="https://www.minecraftmarket.com/api/profiles/heads/xBlatt/32" title="xBlatt" alt="xBlatt" width="32" height="32">
+</div>
+<p><span class="donator-username">xBlatt</span> bought dfsdfsdf
+<br>Price: 0.00 USD</p>
+</div>
+<div class="donator">
+<div class="donator-img">
+<img src="https://www.minecraftmarket.com/api/profiles/heads/Arthix/32" title="Arthix" alt="Arthix" width="32" height="32">
+</div>
+<p><span class="donator-username">Arthix</span> bought Copy - dfsdfsdf
+<br>Price: 0.00 USD</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">Server status</div>
+<div class="panel-body store-status">
+<span class="circle-online"></span>
+<span class="text-muted">playvc.me</span> <span class="text-muted pull-right">53 of 1000 online</span>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">Deal of the month!</div>
+<div class="panel-body">
+<div class="col-lg-8 col-lg-offset-2">
+<div class="item-borderless">
+<a href="#" data-target="#featured12038" class="img-thumbnail" data-toggle="modal" style="border: 0;">
+<img src="
+                                        https://assets.minecraftmarket.com/media/itemimages/vip-gold-badge.png" height="165" width="190" class="img-responsive">
+</a>
+<div class="caption">
+<div class="category-item-name">
+Gold Rank
+</div>
+<div class="category-item-price">
+14.99 USD
+</div>
+<div class="category-item-details">
+<a data-target="#featured12038" role="button" class="btn btn-info btn-xs" data-toggle="modal">Details</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="featured12038" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<h4 class="modal-title" id="myModalLabel">Gold Rank</h4>
+</div>
+<div class="modal-body">
+<p><p><strong>Here is a example item, you can see users have the ability to style the image description how they like with our&nbsp;<span style="color: rgb(0, 0, 255);">WYSIWYG</span>&nbsp;editor and various other options like item images.</strong></p>
+<p>&nbsp;</p>
+<p><strong>Images curtousy of&nbsp;<span style="color: rgb(0, 0, 205);">CraftTillDawn</span>&nbsp;check them out:&nbsp;<a href="http://www.crafttilldawn.com">Http://www.crafttilldawn.com</a></strong></p>
+</p>
+</div>
+<div class="modal-footer">
+<div class="pull-left"><strong>
+14.99 USD
+</strong></div>
+<a href="/checkout/item/add/12038/1">
+<button class="btn btn-primary">Add to cart</button>
+</a>
+<button type="button" class="btn btn-default" data-dismiss="modal">Close
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">Monthly Goal</div>
+<div class="panel-body store-goal">
+<span class="text-muted">0 / 500 USD</span>
+<div class="progress" style="margin-top: 10px; margin-bottom: 0px;">
+<div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="0" arial-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container footer">
+<legend></legend>
+<ul class="nav nav-pills">
+<li>
+<form action="/language/setlang/" method="post" id="formSetLanguage"><input type='hidden' name='csrfmiddlewaretoken' value='beRJMwRVVaY9UxVLeLMRS6idXVWirJja'/>
+<input name="next" type="hidden" value="/"/>
+<select name="language" id="formSetLanguage_select">
+<option>Choose a language</option>
+<option value="en">English</option>
+<option value="de">German</option>
+<option value="es">Spanish</option>
+<option value="fr">French</option>
+<option value="nl">Dutch</option>
+<option value="it">Italian</option>
+<option value="fi">Finnish</option>
+<option value="sv">Swedish</option>
+<option value="no">Norwegian</option>
+<option value="dk">Danish</option>
+<option value="bg">Bulgarian</option>
+<option value="ru">Russian</option>
+<option value="pt">Portuguese</option>
+<option value="hu">Hungarian</option>
+</select>
+</form>
+</li>
+<li><a href="http://www.minecraftmarket.com">Created with Minecraft Market.</a></li>
+<li class="pull-right"><a href="/terms">Terms and Conditions</a></li>
+</ul>
+<script type="text/javascript">
+    $('#formSetLanguage_select').change(function () {
+        $(this).closest('#formSetLanguage').submit();
+    });
+</script>
+</div>
+<script src="https://assets.minecraftmarket.com/static/js/bootstrap.min.js"></script>
+<script lang="javascript" src="https://assets.minecraftmarket.com/static/js/dynamicforms.js"></script>
+<script type="text/javascript" src="https://assets.minecraftmarket.com/static/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="https://assets.minecraftmarket.com/static/js/transitions.js"></script>
+<script type="text/javascript" src="https://assets.minecraftmarket.com/static/js/market.js"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+  google.load('payments', '1.0', {
+    'packages': ['sandbox_config']
+  });
+</script>
+</body>
+</html>
