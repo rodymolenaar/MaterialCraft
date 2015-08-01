@@ -4,6 +4,16 @@ module.exports = function(grunt) {
                 files: ['less/**/*.less'],
                 tasks: ["less:standard", "less:dark", "less:blue", "less:red"]
              },
+             compress: {
+              main: {
+                options: {
+                  archive: 'materialcraft.zip'
+                },
+                src: ['**/*'],
+                cwd: 'dist/',
+                expand: true
+              }
+             },
              less: {
                  standard: {
                      options: {
@@ -53,5 +63,6 @@ module.exports = function(grunt) {
          });
          grunt.loadNpmTasks('grunt-contrib-less');
          grunt.loadNpmTasks('grunt-contrib-watch');
+         grunt.loadNpmTasks('grunt-contrib-compress');
          grunt.registerTask('default', ['watch']);
      };
