@@ -8,18 +8,18 @@ MaterialCraft is a free Buycraft / MinecraftMarket theme based on Google's Mater
 
 ### Standard edition
 
-[Buycraft] (http://rodymol123.github.io/MaterialCraft/preview_buycraft.html)
-[MinecraftMarket] (http://rodymol123.github.io/MaterialCraft/preview_minecraftmarket.html)
+[Buycraft] (http://rodymol123.github.io/MaterialCraft/dist/preview_buycraft.html)
+[MinecraftMarket] (http://rodymol123.github.io/MaterialCraft/dist/preview_minecraftmarket.html)
 
 ### Dark edition
 
-[Buycraft] (http://rodymol123.github.io/MaterialCraft/dark/preview_buycraft.html)
-[MinecraftMarket] (http://rodymol123.github.io/MaterialCraft/dark/preview_minecraftmarket.html)
+[Buycraft] (http://rodymol123.github.io/MaterialCraft/dist/dark/preview_buycraft.html)
+[MinecraftMarket] (http://rodymol123.github.io/MaterialCraft/dist/dark/preview_minecraftmarket.html)
 
 ### Blue edition
 
-[Buycraft] (http://rodymol123.github.io/MaterialCraft/blue/preview_buycraft.html)
-[MinecraftMarket] (http://rodymol123.github.io/MaterialCraft/blue/preview_minecraftmarket.html)
+[Buycraft] (http://rodymol123.github.io/MaterialCraft/dist/blue/preview_buycraft.html)
+[MinecraftMarket] (http://rodymol123.github.io/MaterialCraft/dist/blue/preview_minecraftmarket.html)
 
 ## Bugs and Issues
 
