@@ -1,6 +1,6 @@
 {
   "name": "MaterialCraft",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "dependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-less": "^1.0.1",
