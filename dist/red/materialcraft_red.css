@@ -847,7 +847,7 @@ fieldset[disabled] .btn-link:focus {
   color: #ffffff;
   text-decoration: none;
   outline: 0;
-  background-color: #009688;
+  background-color: #444444;
 }
 .dropdown-menu {
   background: #ffffff;
@@ -858,13 +858,13 @@ fieldset[disabled] .btn-link:focus {
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-  background-color: #009688;
+  background-color: #444444;
   color: #ffffff;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   color: #ffffff;
-  background-color: #009688;
+  background-color: #444444;
 }
 /* Navs */
 .nav-pills > li {
