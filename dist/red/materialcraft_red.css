@@ -1056,4 +1056,8 @@ a.list-group-item.active:focus .list-group-item-text {
   margin-top: 13px;
   margin-bottom: 13px;
 }
+.list-group-item {
+  background: #fff !important;
+  color: #333 !important;
+}
 /*# sourceMappingURL=dist/red/materialcraft_red.css.map */
