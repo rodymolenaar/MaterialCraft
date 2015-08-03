@@ -410,6 +410,13 @@ fieldset[disabled] .btn-danger.active {
   color: #e51c23;
   background-color: #ffffff;
 }
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 17px;
+  line-height: 1.33;
+  border-radius: 4px;
+}
 /* Inputs & Buttons*/
 .input-group-btn .fa-arrow-right {
   display: none;
