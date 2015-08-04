@@ -1046,7 +1046,7 @@ a.list-group-item.active:focus .list-group-item-text {
     text-align: center;
   }
   .navbar {
-    margin-top: 15px;
+    margin-top: 85px;
   }
 }
 .navbar {
@@ -1065,5 +1065,23 @@ a.list-group-item.active:focus .list-group-item-text {
 .list-group-item {
   background: #fff !important;
   color: #333 !important;
+}
+.header > .logo img {
+  display: block;
+  max-height: 90px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: static;
+  margin: auto;
+  margin-bottom: 35px;
+}
+.frontpage-splash {
+  margin-bottom: 40px;
+  display: block;
+  position: static;
+}
+.store-controls {
+  margin-bottom: 25px;
 }
 /*# sourceMappingURL=dist/blue/materialcraft_blue.css.map */
