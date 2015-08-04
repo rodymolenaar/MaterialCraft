@@ -1046,6 +1046,9 @@ a.list-group-item.active:focus .list-group-item-text {
     text-align: center;
   }
   .navbar {
+    margin-top: 15px;
+  }
+  .navbar-static-top {
     margin-top: 85px;
   }
 }
@@ -1083,5 +1086,8 @@ a.list-group-item.active:focus .list-group-item-text {
 }
 .store-controls {
   margin-bottom: 25px;
+}
+#currency_switcher {
+  margin-top: -2px;
 }
 /*# sourceMappingURL=dist/red/materialcraft_red.css.map */
