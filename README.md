@@ -2,11 +2,16 @@
 
 MaterialCraft is a free Buycraft / MinecraftMarket theme based on Google's Material Design.
 
-[Download] (https://github.com/rodymol123/MaterialCraft/releases/download/v2.2.1/materialcraft.zip)
+[Download] (https://github.com/rodymol123/MaterialCraft/archive/v3.0.0.zip)
 
 ## Demo
 
 [Click here] (http://rodymol123.github.io/MaterialCraft/)
+
+## Setup
+
+Copy the contents of `materialcraft.css` (located in the `dist` directory of the theme) and paste them in the theme editor of either Buycraft or MinecraftMarket.
+Feel free to make any changes you'd like.
 
 ## Bugs and Issues
 
