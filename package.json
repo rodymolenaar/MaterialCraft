@@ -1,10 +1,12 @@
 {
   "name": "MaterialCraft",
-  "version": "2.2.1",
-  "dependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-less": "^1.0.1",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-contrib-compress": "^0.13.0"
+  "version": "3.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "author": "Rody Molenaar",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "laravel-elixir": "^6.0.0-2"
   }
 }

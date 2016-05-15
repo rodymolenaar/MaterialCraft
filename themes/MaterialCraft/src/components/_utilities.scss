@@ -1,0 +1,19 @@
+//
+// Utilities
+// --------------------------------------------------
+
+.text-primary {
+  color: #26A69A;
+}
+
+.text-primary:hover {
+  color: #36b23e;
+}
+
+.header .logo span {
+  color:  $logo-color;
+}
+
+img {
+  max-width: 100%;
+}

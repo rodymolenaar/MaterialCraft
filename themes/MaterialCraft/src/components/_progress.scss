@@ -1,0 +1,22 @@
+//
+// Progress
+// --------------------------------------------------
+
+.progress-bar {
+  background-color: $progress;
+}
+
+// ===============================
+// Removes the donation value text
+// ===============================
+
+.donation-goal p,
+.store-goal span {
+  display: none;
+}
+
+.store-goal .progress {
+  margin-top: 0 !important;
+}
+
+// -------------------------------
