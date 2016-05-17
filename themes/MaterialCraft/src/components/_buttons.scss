@@ -7,30 +7,29 @@
 // --------------------------------------------------
 
 .btn {
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: normal;
-  text-align: center;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
-  white-space: nowrap;
-  padding: 6px 16px;
-  font-size: 13px;
-  line-height: 1.846;
   border-radius: 3px;
-  user-select: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.846;
+  margin-bottom: 0;
+  padding: 6px 16px;
+  text-align: center;
+  touch-action: manipulation;
   transition: background-color 500ms linear;
-
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
 
   &:hover,
   &:focus,
   &.focus {
     color: $btn-default-color;
+    outline: 0;
     text-decoration: none;
-    outline:0;
   }
 }
 
@@ -41,21 +40,26 @@
 .btn-default {
   @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
 }
+
 .btn-primary {
   @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
 }
+
 // Success appears as green
 .btn-success {
   @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
 }
+
 // Info appears as blue-green
 .btn-info {
   @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
 }
+
 // Warning appears as orange
 .btn-warning {
   @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
 }
+
 // Danger and error appear as red
 .btn-danger {
   @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);

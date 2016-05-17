@@ -5,24 +5,26 @@
 a {
   color: #384783;
   text-decoration: none;
-}
 
-a:hover,
-a:focus {
-  color: #212a4d;
-  text-decoration: underline;
-}
+  &:hover,
+  &:focus {
+    color: #212a4d;
+    text-decoration: underline;
+  }
 
-a:focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
+  &:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
 
-a.thumbnail:hover,
-a.thumbnail:focus,
-a.thumbnail.active {
-  border-color: #384783;
+  & .thumbnail {
+    &:hover,
+    &:focus,
+    & .active {
+      border-color: #384783;
+    }
+  }
 }
 
 .btn-link {
@@ -30,34 +32,34 @@ a.thumbnail.active {
   font-weight: normal;
   cursor: pointer;
   border-radius: 0;
-}
 
-.btn-link,
-.btn-link:active,
-.btn-link[disabled],
-fieldset[disabled] .btn-link {
-  background-color: transparent;
-  box-shadow: none;
-}
+  &:hover,
+  &:focus {
+    color: #212a4d;
+    text-decoration: underline;
+    background-color: transparent;
+  }
 
-.btn-link,
-.btn-link:hover,
-.btn-link:focus,
-.btn-link:active {
-  border-color: transparent;
-}
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
 
-.btn-link:hover,
-.btn-link:focus {
-  color: #212a4d;
-  text-decoration: underline;
-  background-color: transparent;
-}
+  &,
+  &:active,
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: transparent;
+    box-shadow: none;
+  }
 
-.btn-link[disabled]:hover,
-fieldset[disabled] .btn-link:hover,
-.btn-link[disabled]:focus,
-fieldset[disabled] .btn-link:focus {
-  color: #999999;
-  text-decoration: none;
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus {
+      color: #999999;
+      text-decoration: none;
+    }
+  }
 }

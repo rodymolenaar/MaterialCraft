@@ -6,14 +6,14 @@
   background: #fff;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 	border: 0px solid transparent;
-}
 
-.panel .panel-heading {
-  color: $panel-header-color;
-  text-transform: uppercase;
-  background-color: $panel-header;
-  font-weight: 500 !important;
-  border: 0;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
+  & .panel-heading {
+    color: $panel-header-color;
+    text-transform: uppercase;
+    background-color: $panel-header;
+    font-weight: 500 !important;
+    border: 0;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
 }

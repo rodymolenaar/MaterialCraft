@@ -21,6 +21,9 @@
 
 .frontpage-splash {
   background-image: none !important;
+  margin-bottom: 40px;
+  display: block;
+  position: static;
 }
 
 .jumbotron {
@@ -35,46 +38,65 @@
   border-radius: 4px;
 }
 
-.header .store-controls {
-  background: transparent;
-  padding: 0;
+.header {
+
+  > .store-controls {
+    background: transparent;
+    padding: 0;
+    margin-bottom: 25px;
+
+    @media (max-width: 992px) {
+      float: none;
+      text-align: center;
+    }
+  }
+
+  > .logo {
+    float: left;
+    height: 100%;
+    position: relative;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-shadow: none;
+    color: $logo-color;
+    padding-top: 0;
+
+    @media (max-width: 992px) {
+      float: none;
+      text-align: center;
+    }
+
+    img {
+      display: block;
+      max-height: 90px;
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      position: static;
+      margin: auto;
+      margin-bottom: 35px;
+    }
+  }
 }
 
-.header .logo {
-  float: left;
-  height: 100%;
-  position: relative;
-  font-size: 1.5em;
-  font-weight: 500;
-  text-shadow: none;
-  color: $logo-color;
-  padding-top: 0;
-}
-
-@media (max-width: 992px) {
-  .header .logo {
-    float: none;
-    text-align: center;
-  }
-  .header .store-controls {
-    float: none;
-    text-align: center;
-  }
-  .navbar {
-    margin-top: 15px;
-  }
-  .navbar-static-top {
-    margin-top: 85px;
-  }
-}
 .navbar {
   min-height: 60px;
+  @media (min-width: 992px) {
+    margin-top: 15px;
+    & .navbar-nav {
+      > li {
+        > a {
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
 }
 
-@media (min-width: 992px) {
-  .navbar-nav > li > a {
-    padding-top: 20px;
-    padding-bottom: 20px;
+.navbar-static-top {
+  @media (max-width: 992px) {
+    margin-top: 85px;
   }
 }
 
@@ -86,27 +108,6 @@
 .list-group-item {
   background: #fff !important;
   color: #333 !important;
-}
-
-.header > .logo img {
-  display: block;
-  max-height: 90px;
-  max-width: 100%;
-  width: auto;
-  height: auto;
-  position: static;
-  margin: auto;
-  margin-bottom: 35px;
-}
-
-.frontpage-splash {
-  margin-bottom: 40px;
-  display: block;
-  position: static;
-}
-
-.store-controls {
-  margin-bottom: 25px;
 }
 
 #currency_switcher {

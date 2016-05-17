@@ -3,11 +3,12 @@
 // --------------------------------------------------
 
 .text-primary {
-  color: #26A69A;
-}
+  color: $brand-primary;
 
-.text-primary:hover {
-  color: #36b23e;
+  &:hover,
+  &:focus {
+    color: darken($brand-primary, 5%);
+  }
 }
 
 .header .logo span {
