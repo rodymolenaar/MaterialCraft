@@ -60,6 +60,50 @@
         }
       }
     }
+
+    > .open {
+      > a {
+        &,
+        &:hover,
+        &:focus {
+          color: #fff;
+          background: darken($navbar-bg, 10%) !important;
+
+          & .caret {
+            border-top-color: #fff;
+            border-bottom-color: #fff;
+          }
+        }
+      }
+
+      & .dropdown-menu {
+        > li {
+          > a {
+            @media (max-width: 767px) {
+              &,
+              &:hover,
+              &:focus {
+                color: #fff;
+                background: transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    > .dropdown {
+      > a {
+        &,
+        &:hover,
+        &:focus {
+          & .caret {
+            border-top-color: #fff;
+            border-bottom-color: #fff;
+          }
+        }
+      }
+    }
   }
 
   & .navbar-collapse,
