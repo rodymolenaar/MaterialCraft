@@ -11,7 +11,7 @@
   <link href="https://assets.minecraftmarket.com/static/css/bootstrap-select.min.css" rel="stylesheet">
   <link href="https://assets.minecraftmarket.com/static/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://assets.minecraftmarket.com/static/css/market.css" rel="stylesheet">
-  <link id="themestyle" href="../themes/MaterialCraft-Purple/dist/materialcraft.css" rel="stylesheet">
+  <link id="themestyle" href="../themes/MaterialCraft/dist/materialcraft.css?v=3.1.0" rel="stylesheet">
   <script type="text/javascript" src="https://assets.minecraftmarket.com/static/js/jquery-2.0.3.min.js"></script>
 </head>
 <body style="background-image: url('https://assets.minecraftmarket.com/static/img/website-background.png')">
@@ -122,13 +122,19 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="/">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li class="divider-vertical"></li>
-            <li><a href="/category/5824">Ranks</a></li>
+            <li><a href="#">Ranks</a></li>
             <li class="divider-vertical"></li>
-            <li><a href="/category/5825">Items</a></li>
+            <li><a href="#">Items</a></li>
             <li class="divider-vertical"></li>
-            <li><a href="/category/5827">Money</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Creative <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Rank</a></li>
+                <li><a href="#">Upgrade</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
