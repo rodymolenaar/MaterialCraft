@@ -1,12 +1,12 @@
 {
   "name": "MaterialCraft",
-  "version": "3.1.0",
-  "description": "",
+  "version": "3.2.0",
+  "description": "Free Buycraft / MinecraftMarket theme based on Google's Material Design.",
   "main": "gulpfile.js",
   "author": "Rody Molenaar",
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "laravel-elixir": "^6.0.0-2"
+    "laravel-elixir": "^6.0.0-15"
   }
 }

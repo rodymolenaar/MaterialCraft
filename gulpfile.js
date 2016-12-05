@@ -6,8 +6,8 @@ var elixir = require('laravel-elixir');
 |--------------------------------------------------------------------------
 */
 
-elixir.config.assetsPath = 'themes';
-elixir.config.publicPath = 'themes';
+elixir.config.assetsPath = 'src';
+elixir.config.publicPath = 'dist';
 elixir.config.css.sass.folder = '';
 
 /*
@@ -17,9 +17,9 @@ elixir.config.css.sass.folder = '';
 */
 
 elixir(function(mix) {
-  mix.sass('MaterialCraft/src/materialcraft.scss', 'themes/MaterialCraft/dist/materialcraft.css')
-     .sass('MaterialCraft-Blue/src/materialcraft.scss', 'themes/MaterialCraft-Blue/dist/materialcraft.css')
-     .sass('MaterialCraft-Dark/src/materialcraft.scss', 'themes/MaterialCraft-Dark/dist/materialcraft.css')
-     .sass('MaterialCraft-Purple/src/materialcraft.scss', 'themes/MaterialCraft-Purple/dist/materialcraft.css')
-     .sass('MaterialCraft-Red/src/materialcraft.scss', 'themes/MaterialCraft-Red/dist/materialcraft.css');
+  mix.sass('MaterialCraft/materialcraft.scss', 'dist/materialcraft.css')
+     .sass('MaterialCraft-Blue/materialcraft.scss', 'dist/materialcraft-blue.css')
+     .sass('MaterialCraft-Dark/materialcraft.scss', 'dist/materialcraft-dark.css')
+     .sass('MaterialCraft-Purple/materialcraft.scss', 'dist/materialcraft-purple.css')
+     .sass('MaterialCraft-Red/materialcraft.scss', 'dist/materialcraft-red.css');
 });

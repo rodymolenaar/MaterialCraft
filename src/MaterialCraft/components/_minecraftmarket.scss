@@ -1,0 +1,130 @@
+/*!
+* --------------------------------------------------
+* MinecraftMarket Specifics
+* You can remove this part if you're not using MinecraftMarket.
+* --------------------------------------------------
+*/
+
+.category-item-name {
+  display: block;
+  text-align: center;
+}
+
+.category-item-price {
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.category-item-details {
+  display: block;
+  float: none;
+  text-align: center;
+}
+
+.frontpage-splash {
+  background-image: none !important;
+  margin-bottom: 40px;
+  display: block;
+  position: static;
+}
+
+.jumbotron {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.navbar {
+  border-radius: 4px;
+}
+
+.header {
+
+  > .store-controls {
+    background: transparent;
+    padding: 0;
+    margin-bottom: 25px;
+
+    @media (max-width: 992px) {
+      float: none;
+      text-align: center;
+    }
+  }
+
+  > .logo {
+    float: left;
+    height: 100%;
+    position: relative;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-shadow: none;
+    color: $logo-color;
+    padding-top: 0;
+
+    @media (max-width: 992px) {
+      float: none;
+      text-align: center;
+    }
+
+    img {
+      display: block;
+      max-height: 90px;
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      position: static;
+      margin: auto;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.navbar {
+  min-height: 60px;
+  @media (min-width: 992px) {
+    margin-top: 15px;
+    & .navbar-nav {
+      > li {
+        > a {
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+.navbar-static-top {
+  @media (max-width: 992px) {
+    margin-top: 85px;
+  }
+}
+
+.navbar-toggle {
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+.list-group-item {
+  background: #fff !important;
+  color: #333 !important;
+}
+
+#currency_switcher {
+  margin-top: -2px;
+}
+
+.circle-online, .circle-offline {
+  margin-right: 5px !important;
+}
+
+.circle-online {
+  background: $online-status-color;
+}
+
+.circle-offline {
+  background: $offline-status-color;
+}
