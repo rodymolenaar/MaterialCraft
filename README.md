@@ -1,4 +1,4 @@
-# MaterialCraft 3.2.0
+# MaterialCraft 3.3.0
 
 MaterialCraft is a free Buycraft / MinecraftMarket theme based on Google's Material Design.
 

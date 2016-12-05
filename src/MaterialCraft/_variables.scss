@@ -15,7 +15,7 @@ $brand-info:            palette(Purple) !default;
 $brand-warning:         palette(Amber) !default;
 $brand-danger:          palette(Red) !default;
 
-$link-color : $brand-primary !default;
+$link-color: $brand-primary !default;
 
 //== Components
 //
@@ -54,27 +54,29 @@ $caret-width-large:         5px !default;
 $cursor-disabled:                not-allowed !default;
 
 //** Specify basic styles
-$font: 'Roboto', sans-serif !default;
-$body-bg: #eee !default;
-$text-color: #333 !default;
-$font-size: 14px !default;
-$navbar-bg  : $brand-primary !default;
-$logo-color: $navbar-bg !default;
-$panel-header : $brand-primary !default;
-$panel-header-color: #fff !default;
-$online-status-bg: #fff !default;
-$online-status-color: palette(Light Green) !default;
-$offline-status-bg: #fff !default;
-$offline-status-color: palette(Red) !default;
-$dropdown-hover-bg: darken($brand-primary, 5%) !default;
-$dropdown-hover-color: #fff !default;
-$dropdown-menu-bg: #fff !default;
-$progress: $brand-primary !default;
-$modal-header-bg: $brand-primary !default;
-$modal-header-color: #fff !default;
-$form-control: #ccc !default;
-$form-control-focus: $brand-primary !default;
-$form-control-color: #555 !default;
+$font:                      'Roboto', sans-serif !default;
+$body-bg:                   #eee !default;
+$text-color:                #333 !default;
+$font-size:                 14px !default;
+$navbar-bg:                 $brand-primary !default;
+$logo-color:                $navbar-bg !default;
+$panel-header:              $brand-primary !default;
+$panel-header-color:        #fff !default;
+$online-status-bg:          #fff !default;
+$online-status-color:       palette(Light Green) !default;
+$offline-status-bg:         #fff !default;
+$offline-status-color:      palette(Red) !default;
+$dropdown-hover-bg:         #ECECEC !default;
+$dropdown-hover-color:      #333 !default;
+$dropdown-active-bg:        $brand-primary !default;
+$dropdown-active-color:     #fff !default;
+$dropdown-menu-bg:          #fff !default;
+$progress:                  $brand-primary !default;
+$modal-header-bg:           $brand-primary !default;
+$modal-header-color:        #fff !default;
+$form-control:              #ccc !default;
+$form-control-focus:        $brand-primary !default;
+$form-control-color:        #555 !default;
 
 //== Buttons
 //

@@ -47,6 +47,8 @@
           text-decoration: none;
           background-color: darken($navbar-bg, 4%);
         }
+
+        @include ripple(#fff);
       }
     }
 
