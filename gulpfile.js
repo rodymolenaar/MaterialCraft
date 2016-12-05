@@ -21,5 +21,7 @@ elixir(function(mix) {
      .sass('MaterialCraft-Blue/materialcraft.scss', 'dist/materialcraft-blue.css')
      .sass('MaterialCraft-Dark/materialcraft.scss', 'dist/materialcraft-dark.css')
      .sass('MaterialCraft-Purple/materialcraft.scss', 'dist/materialcraft-purple.css')
-     .sass('MaterialCraft-Red/materialcraft.scss', 'dist/materialcraft-red.css');
+     .sass('MaterialCraft-Red/materialcraft.scss', 'dist/materialcraft-red.css')
+     .sass('MaterialCraft-Green/materialcraft.scss', 'dist/materialcraft-green.css')
+    .sass('MaterialCraft-Yellow/materialcraft.scss', 'dist/materialcraft-yellow.css');
 });
