@@ -15,6 +15,8 @@
 
     > a,
     > span {
+      @extend .ripple--dark;
+
       position: relative;
       float: left;
       padding: 6px 12px;
@@ -54,10 +56,12 @@
       &,
       &:hover,
       &:focus {
+        @extend .ripple--white;
+
         z-index: 2;
         color: #ffffff;
-        background-color: #51ca59;
-        border-color: #51ca59;
+        background-color: $brand-primary;
+        border-color: $brand-primary;
         cursor: default;
       }
     }

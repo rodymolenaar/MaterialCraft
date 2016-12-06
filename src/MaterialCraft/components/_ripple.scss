@@ -1,0 +1,7 @@
+.ripple--white {
+  @include ripple(#fff);
+}
+
+.ripple--dark {
+  @include ripple(#555);
+}

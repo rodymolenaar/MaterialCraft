@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 /*!
- * MaterialCraft 3.2.0 (https://github.com/rodymol123/MaterialCraft)
+ * MaterialCraft 3.4.0 (https://github.com/rodymol123/MaterialCraft)
  * Copyright 2015-2016 Rody Molenaar (https://rodymol123.eu)
  * Licensed under MIT (http://opensource.org/licenses/MIT)
  */
@@ -9,6 +9,76 @@ body {
   background: #eee !important;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
+}
+
+.ripple--white, .btn-default, .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger, .navbar-default .navbar-nav > li > a, .dropdown-menu > .active > a, .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
+.pagination > .active > span,
+.pagination > .active > span:hover,
+.pagination > .active > span:focus {
+  position: relative;
+}
+
+.ripple--white:after, .btn-default:after, .btn-primary:after, .btn-success:after, .btn-info:after, .btn-warning:after, .btn-danger:after, .navbar-default .navbar-nav > li > a:after, .dropdown-menu > .active > a:after, .pagination > .active > a:after, .pagination > .active > a:hover:after, .pagination > .active > a:focus:after,
+.pagination > .active > span:after,
+.pagination > .active > span:hover:after,
+.pagination > .active > span:focus:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: -webkit-radial-gradient(circle, #fff 10%, transparent 10.01%);
+  background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-size: 1000% 1000%;
+  background-position: 50%;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: background .5s, opacity 1s;
+  transition: background .5s, opacity 1s;
+}
+
+.ripple--white:active:after, .btn-default:active:after, .btn-primary:active:after, .btn-success:active:after, .btn-info:active:after, .btn-warning:active:after, .btn-danger:active:after, .navbar-default .navbar-nav > li > a:active:after, .dropdown-menu > .active > a:active:after, .pagination > .active > a:active:after,
+.pagination > .active > span:active:after {
+  background-size: 0% 0%;
+  opacity: .2;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+.ripple--dark, .dropdown-menu li > a, .pagination > li > a,
+.pagination > li > span {
+  position: relative;
+}
+
+.ripple--dark:after, .dropdown-menu li > a:after, .pagination > li > a:after,
+.pagination > li > span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: -webkit-radial-gradient(circle, #555 10%, transparent 10.01%);
+  background-image: radial-gradient(circle, #555 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-size: 1000% 1000%;
+  background-position: 50%;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: background .5s, opacity 1s;
+  transition: background .5s, opacity 1s;
+}
+
+.ripple--dark:active:after, .dropdown-menu li > a:active:after, .pagination > li > a:active:after,
+.pagination > li > span:active:after {
+  background-size: 0% 0%;
+  opacity: .2;
+  -webkit-transition: 0s;
+  transition: 0s;
 }
 
 /*!
@@ -49,7 +119,6 @@ body {
   color: #fff;
   background-color: #009688;
   border-color: #009688;
-  position: relative;
 }
 
 .btn-default:focus, .btn-default.focus {
@@ -98,56 +167,29 @@ fieldset[disabled] .btn-default.focus {
   background-color: #fff;
 }
 
-.btn-default:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-image: -webkit-radial-gradient(circle, #fff 10%, transparent 10.01%);
-  background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
-  background-repeat: no-repeat;
-  background-size: 1000% 1000%;
-  background-position: 50%;
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transition: background .5s, opacity 1s;
-  transition: background .5s, opacity 1s;
-}
-
-.btn-default:active:after {
-  background-size: 0% 0%;
-  opacity: .2;
-  -webkit-transition: 0s;
-  transition: 0s;
-}
-
 .btn-primary {
   color: #fff;
-  background-color: #009688;
-  border-color: #009688;
-  position: relative;
+  background-color: #9C27B0;
+  border-color: #9C27B0;
 }
 
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #00635a;
-  border-color: #00635a;
+  background-color: #771e86;
+  border-color: #771e86;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #00635a;
-  border-color: #00635a;
+  background-color: #771e86;
+  border-color: #771e86;
 }
 
 .btn-primary:active, .btn-primary.active,
 .open > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #00635a;
-  border-color: #00635a;
+  background-color: #771e86;
+  border-color: #771e86;
 }
 
 .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus,
@@ -155,8 +197,8 @@ fieldset[disabled] .btn-default.focus {
 .open > .btn-primary.dropdown-toggle:focus,
 .open > .btn-primary.dropdown-toggle.focus {
   color: #fff;
-  background-color: #003f39;
-  border-color: #003f39;
+  background-color: #5d1769;
+  border-color: #5d1769;
 }
 
 .btn-primary:active, .btn-primary.active,
@@ -168,46 +210,19 @@ fieldset[disabled] .btn-default.focus {
 fieldset[disabled] .btn-primary:hover,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: #009688;
-  border-color: #009688;
+  background-color: #9C27B0;
+  border-color: #9C27B0;
 }
 
 .btn-primary .badge {
-  color: #009688;
+  color: #9C27B0;
   background-color: #fff;
-}
-
-.btn-primary:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-image: -webkit-radial-gradient(circle, #fff 10%, transparent 10.01%);
-  background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
-  background-repeat: no-repeat;
-  background-size: 1000% 1000%;
-  background-position: 50%;
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transition: background .5s, opacity 1s;
-  transition: background .5s, opacity 1s;
-}
-
-.btn-primary:active:after {
-  background-size: 0% 0%;
-  opacity: .2;
-  -webkit-transition: 0s;
-  transition: 0s;
 }
 
 .btn-success {
   color: #fff;
   background-color: #8BC34A;
   border-color: #8BC34A;
-  position: relative;
 }
 
 .btn-success:focus, .btn-success.focus {
@@ -256,56 +271,29 @@ fieldset[disabled] .btn-success.focus {
   background-color: #fff;
 }
 
-.btn-success:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-image: -webkit-radial-gradient(circle, #fff 10%, transparent 10.01%);
-  background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
-  background-repeat: no-repeat;
-  background-size: 1000% 1000%;
-  background-position: 50%;
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transition: background .5s, opacity 1s;
-  transition: background .5s, opacity 1s;
-}
-
-.btn-success:active:after {
-  background-size: 0% 0%;
-  opacity: .2;
-  -webkit-transition: 0s;
-  transition: 0s;
-}
-
 .btn-info {
   color: #fff;
-  background-color: #9C27B0;
-  border-color: #9C27B0;
-  position: relative;
+  background-color: #009688;
+  border-color: #009688;
 }
 
 .btn-info:focus, .btn-info.focus {
   color: #fff;
-  background-color: #771e86;
-  border-color: #771e86;
+  background-color: #00635a;
+  border-color: #00635a;
 }
 
 .btn-info:hover {
   color: #fff;
-  background-color: #771e86;
-  border-color: #771e86;
+  background-color: #00635a;
+  border-color: #00635a;
 }
 
 .btn-info:active, .btn-info.active,
 .open > .btn-info.dropdown-toggle {
   color: #fff;
-  background-color: #771e86;
-  border-color: #771e86;
+  background-color: #00635a;
+  border-color: #00635a;
 }
 
 .btn-info:active:hover, .btn-info:active:focus, .btn-info:active.focus, .btn-info.active:hover, .btn-info.active:focus, .btn-info.active.focus,
@@ -313,8 +301,8 @@ fieldset[disabled] .btn-success.focus {
 .open > .btn-info.dropdown-toggle:focus,
 .open > .btn-info.dropdown-toggle.focus {
   color: #fff;
-  background-color: #5d1769;
-  border-color: #5d1769;
+  background-color: #003f39;
+  border-color: #003f39;
 }
 
 .btn-info:active, .btn-info.active,
@@ -326,46 +314,19 @@ fieldset[disabled] .btn-success.focus {
 fieldset[disabled] .btn-info:hover,
 fieldset[disabled] .btn-info:focus,
 fieldset[disabled] .btn-info.focus {
-  background-color: #9C27B0;
-  border-color: #9C27B0;
+  background-color: #009688;
+  border-color: #009688;
 }
 
 .btn-info .badge {
-  color: #9C27B0;
+  color: #009688;
   background-color: #fff;
-}
-
-.btn-info:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-image: -webkit-radial-gradient(circle, #fff 10%, transparent 10.01%);
-  background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
-  background-repeat: no-repeat;
-  background-size: 1000% 1000%;
-  background-position: 50%;
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transition: background .5s, opacity 1s;
-  transition: background .5s, opacity 1s;
-}
-
-.btn-info:active:after {
-  background-size: 0% 0%;
-  opacity: .2;
-  -webkit-transition: 0s;
-  transition: 0s;
 }
 
 .btn-warning {
   color: #fff;
   background-color: #FFC107;
   border-color: #FFC107;
-  position: relative;
 }
 
 .btn-warning:focus, .btn-warning.focus {
@@ -414,37 +375,10 @@ fieldset[disabled] .btn-warning.focus {
   background-color: #fff;
 }
 
-.btn-warning:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-image: -webkit-radial-gradient(circle, #fff 10%, transparent 10.01%);
-  background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
-  background-repeat: no-repeat;
-  background-size: 1000% 1000%;
-  background-position: 50%;
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transition: background .5s, opacity 1s;
-  transition: background .5s, opacity 1s;
-}
-
-.btn-warning:active:after {
-  background-size: 0% 0%;
-  opacity: .2;
-  -webkit-transition: 0s;
-  transition: 0s;
-}
-
 .btn-danger {
   color: #fff;
   background-color: #F44336;
   border-color: #F44336;
-  position: relative;
 }
 
 .btn-danger:focus, .btn-danger.focus {
@@ -491,32 +425,6 @@ fieldset[disabled] .btn-danger.focus {
 .btn-danger .badge {
   color: #F44336;
   background-color: #fff;
-}
-
-.btn-danger:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-image: -webkit-radial-gradient(circle, #fff 10%, transparent 10.01%);
-  background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
-  background-repeat: no-repeat;
-  background-size: 1000% 1000%;
-  background-position: 50%;
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transition: background .5s, opacity 1s;
-  transition: background .5s, opacity 1s;
-}
-
-.btn-danger:active:after {
-  background-size: 0% 0%;
-  opacity: .2;
-  -webkit-transition: 0s;
-  transition: 0s;
 }
 
 /*!
@@ -841,7 +749,7 @@ input[type="checkbox"]:disabled:checked:after,
 */
 .label-success {
   background-color: #fff;
-  color: #8BC34A;
+  color: #4CAF50;
   padding-top: 5px;
 }
 
@@ -877,12 +785,22 @@ input[type="checkbox"]:disabled:checked:after,
   color: #fff;
   box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.24);
   min-height: 16.42857143px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
 }
 
 .modal-content {
   background-color: #ffffff;
   border: 0px transparent;
-  border-radius: 0px;
+}
+
+.modal-footer {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.close {
+  margin: 0 !important;
 }
 
 .close, .close:hover, .close:focus, .close:active {
@@ -946,39 +864,12 @@ input[type="checkbox"]:disabled:checked:after,
   font-size: 16px;
   -webkit-transition: 300ms;
   transition: 300ms;
-  position: relative;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #fff;
   text-decoration: none;
   background-color: #008276;
-}
-
-.navbar-default .navbar-nav > li > a:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-image: -webkit-radial-gradient(circle, #fff 10%, transparent 10.01%);
-  background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
-  background-repeat: no-repeat;
-  background-size: 1000% 1000%;
-  background-position: 50%;
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transition: background .5s, opacity 1s;
-  transition: background .5s, opacity 1s;
-}
-
-.navbar-default .navbar-nav > li > a:active:after {
-  background-size: 0% 0%;
-  opacity: .2;
-  -webkit-transition: 0s;
-  transition: 0s;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -1032,6 +923,46 @@ input[type="checkbox"]:disabled:checked:after,
 
 img {
   max-width: 100%;
+}
+
+.category .packages-image {
+  margin: 0;
+}
+
+.category .packages-image .package {
+  margin: 0;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.category .packages-image .package:hover, .category .packages-image .package:focus {
+  background: #eee;
+}
+
+.category .packages-image .package .info .text {
+  width: 100%;
+  height: 40px;
+  float: none;
+  padding-right: 0;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.category .packages-image .package .info .text .name,
+.category .packages-image .package .info .text .price {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.category .packages-image .package .info .button {
+  float: none;
+  width: 42%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*!
@@ -1222,8 +1153,8 @@ a .list-group-item .list-group-item-heading {
 .pagination > .active > span:focus {
   z-index: 2;
   color: #ffffff;
-  background-color: #51ca59;
-  border-color: #51ca59;
+  background-color: #009688;
+  border-color: #009688;
   cursor: default;
 }
 
@@ -1383,11 +1314,19 @@ a .list-group-item .list-group-item-heading {
 }
 
 .circle-online {
-  background: #8BC34A;
+  background: #4CAF50;
 }
 
 .circle-offline {
   background: #F44336;
+}
+
+.category-image-item {
+  border-radius: 4px;
+}
+
+.category-image-item:hover, .category-image-item:focus {
+  background: #eee;
 }
 
 /* ** Your own CSS here ** */

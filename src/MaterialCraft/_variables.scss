@@ -63,7 +63,7 @@ $logo-color:                $navbar-bg !default;
 $panel-header:              $brand-primary !default;
 $panel-header-color:        #fff !default;
 $online-status-bg:          #fff !default;
-$online-status-color:       palette(Light Green) !default;
+$online-status-color:       palette(Green) !default;
 $offline-status-bg:         #fff !default;
 $offline-status-color:      palette(Red) !default;
 $dropdown-hover-bg:         #ECECEC !default;
@@ -89,16 +89,16 @@ $btn-default-bg:                 $brand-primary !default;
 $btn-default-border:             $btn-default-bg !default;
 
 $btn-primary-color:              #fff !default;
-$btn-primary-bg:                 $brand-primary !default;
-$btn-primary-border:             $brand-primary !default;
+$btn-primary-bg:                 $brand-info !default;
+$btn-primary-border:             $brand-info !default;
 
 $btn-success-color:              #fff !default;
 $btn-success-bg:                 $brand-success !default;
 $btn-success-border:             $brand-success !default;
 
 $btn-info-color:                 #fff !default;
-$btn-info-bg:                    $brand-info !default;
-$btn-info-border:                $brand-info !default;
+$btn-info-bg:                    $brand-primary !default;
+$btn-info-border:                $brand-primary !default;
 
 $btn-warning-color:              #fff !default;
 $btn-warning-bg:                 $brand-warning !default;

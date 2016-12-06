@@ -12,6 +12,8 @@
 
   & li {
     > a {
+      @extend .ripple--dark;
+
       &:hover,
       &:focus {
         background-color: $dropdown-hover-bg;
@@ -23,6 +25,8 @@
 
   > .active {
     > a {
+      @extend .ripple--white;
+
       &,
       &:hover,
       &:focus {

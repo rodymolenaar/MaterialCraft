@@ -48,7 +48,7 @@
           background-color: darken($navbar-bg, 4%);
         }
 
-        @include ripple(#fff);
+        @extend .ripple--white;
       }
     }
 

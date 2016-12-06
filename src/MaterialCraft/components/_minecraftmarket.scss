@@ -128,3 +128,12 @@
 .circle-offline {
   background: $offline-status-color;
 }
+
+.category-image-item {
+  border-radius: 4px;
+  
+  &:hover,
+  &:focus {
+    background: #eee;
+  }
+}

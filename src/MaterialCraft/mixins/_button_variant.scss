@@ -59,6 +59,6 @@
     background-color: $color;
   }
 
-  @include ripple($color);
+  @extend .ripple--white;
 
 }
