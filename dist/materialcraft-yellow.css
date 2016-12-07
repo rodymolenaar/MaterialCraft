@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 /*!
- * MaterialCraft 3.4.0 (https://github.com/rodymol123/MaterialCraft)
+ * MaterialCraft 3.4.1 (https://github.com/rodymol123/MaterialCraft)
  * Copyright 2015-2016 Rody Molenaar (https://rodymol123.eu)
  * Licensed under MIT (http://opensource.org/licenses/MIT)
  */
@@ -960,7 +960,7 @@ img {
 
 .category .packages-image .package .info .button {
   float: none;
-  width: 42%;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1214,11 +1214,57 @@ a .list-group-item .list-group-item-heading {
   text-align: center;
 }
 
+.category-item-details > a {
+  display: block;
+}
+
 .frontpage-splash {
   background-image: none !important;
   margin-bottom: 40px;
   display: block;
   position: static;
+}
+
+.frontpage-splash > .header > .store-controls {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 992px) {
+  .frontpage-splash > .header > .store-controls {
+    float: none;
+    text-align: center;
+  }
+}
+
+.frontpage-splash > .header > .logo {
+  float: left;
+  height: 100%;
+  position: relative;
+  font-size: 1.5em;
+  font-weight: 500;
+  text-shadow: none;
+  color: #FFB300;
+  padding-top: 0;
+}
+
+@media (max-width: 992px) {
+  .frontpage-splash > .header > .logo {
+    float: none;
+    text-align: center;
+  }
+}
+
+.frontpage-splash > .header > .logo img {
+  display: block;
+  max-height: 90px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: static;
+  margin: auto;
+  margin-bottom: 35px;
 }
 
 .jumbotron {
@@ -1231,48 +1277,6 @@ a .list-group-item .list-group-item-heading {
 
 .navbar {
   border-radius: 4px;
-}
-
-.header > .store-controls {
-  background: transparent;
-  padding: 0;
-  margin-bottom: 25px;
-}
-
-@media (max-width: 992px) {
-  .header > .store-controls {
-    float: none;
-    text-align: center;
-  }
-}
-
-.header > .logo {
-  float: left;
-  height: 100%;
-  position: relative;
-  font-size: 1.5em;
-  font-weight: 500;
-  text-shadow: none;
-  color: #FFB300;
-  padding-top: 0;
-}
-
-@media (max-width: 992px) {
-  .header > .logo {
-    float: none;
-    text-align: center;
-  }
-}
-
-.header > .logo img {
-  display: block;
-  max-height: 90px;
-  max-width: 100%;
-  width: auto;
-  height: auto;
-  position: static;
-  margin: auto;
-  margin-bottom: 35px;
 }
 
 .navbar {
