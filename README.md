@@ -29,8 +29,3 @@ MaterialCraft was created by and is maintained by **Rody Molenaar**.
 * https://twitter.com/rodymolenaar
 * https://github.com/rodymol123
 * https://rodymol123.eu
-
-
-## Copyright and License
-
-Copyright 2015-2016 Rody Molenaar. Code released under the [MIT license] (http://opensource.org/licenses/MIT).
