@@ -27,5 +27,5 @@ Our quality standards are high, so if you find anything(!), please open an issue
 MaterialCraft was created by and is maintained by **Rody Molenaar**.
 
 * https://twitter.com/rodymolenaar
-* https://github.com/rodymol123
-* https://rodymol123.eu
+* https://github.com/rodymolenaar
+* https://rodymolenaar.com
