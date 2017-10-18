@@ -12,7 +12,7 @@ MaterialCraft is a free Buycraft / MinecraftMarket theme based on Google's Mater
 
 ## Setup
 
-Copy the contents of the theme you'd like (located in the `dist` directory) and paste them in the theme editor of either Buycraft or MinecraftMarket. You're free to change the theme to fit your needs.
+Copy the contents of the theme you'd like (located in the [`dist`](https://github.com/rodymolenaar/MaterialCraft/tree/master/dist) directory) and paste them in the theme editor of either Buycraft or MinecraftMarket. You're free to change the theme to fit your needs.
 
 ### MinecraftMarket Specifics
 
